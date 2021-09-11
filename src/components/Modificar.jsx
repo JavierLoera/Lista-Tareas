@@ -74,11 +74,15 @@ export default function Modificar({ tareaACambiar, actualizar }) {
 					)}
 
 					<Button
-						style={{ backgroundColor: "#039be5", color: "white" }}
+						style={{
+							backgroundColor: "#039be5",
+							color: "white",
+							marginBottom: "10px",
+						}}
 						type="submit"
 						value="Submit"
 						variant="contained"
-						size="large"
+						size="medium"
 						startIcon={<SaveIcon />}
 					>
 						Modificar
@@ -86,9 +90,13 @@ export default function Modificar({ tareaACambiar, actualizar }) {
 
 					<Link to="/">
 						<Button
-							style={{ backgroundColor: "#039be5", color: "white" }}
+							style={{
+								marginLeft: "10px",
+								backgroundColor: "#039be5",
+								color: "white",
+							}}
 							variant="contained"
-							size="large"
+							size="medium"
 							startIcon={<ArrowBackIcon />}
 						>
 							Volver al Inicio
