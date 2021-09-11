@@ -1,16 +1,3 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-
-import {
-	Table,
-	TableCell,
-	TableHead,
-	TableBody,
-	TableRow,
-	Paper,
-	TableContainer,
-	Container,
-} from "@material-ui/core";
 import TareaRow from "./TareaRow";
 
 const useStyles = makeStyles({
