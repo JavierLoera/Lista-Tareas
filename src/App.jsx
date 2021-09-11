@@ -8,7 +8,7 @@ import Modificar from "./components/Modificar.jsx";
 
 import shortid from "shortid";
 
-export default function FormTable() {
+export default function App() {
 	const initialState = {
 		id: shortid.generate(),
 		tarea: "",
