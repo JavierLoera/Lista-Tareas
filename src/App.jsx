@@ -94,34 +94,39 @@ export default function App() {
 							)}
 						/>
 					</Switch>
-				
+                                 }
 
-<Switch>
-						<Route
+                                 {     
+                                         <Switch>
+						 <Route
 							exact
 							path="/"
 							component={() => (
 								<FormTareas
 									handleChange={handleChange}
-					handleSubmit={handleSubmit}
-					validateForm={validateForm}
+					                                handleSubmit={handleSubmit}
+					                                validateForm={validateForm}
 								/>
 							)}
 						/>
 					</Switch>
-				<Switch>
+                                  }
+                                  {
+
+				        <Switch>
 						<Route
 							exact
 							path="/"
 							component={() => (
 								<BasicTable
-									tareas={tareas}
-					eliminarTarea={eliminarTarea}
-					modificarTarea={modificarTarea}
+						      			tareas={tareas}
+					                                eliminarTarea={eliminarTarea}
+					                                modificarTarea={modificarTarea}
 								/>
 							)}
 						/>
-					</Switch>}
+					</Switch>
+                                  }
 	
 			</BrowserRouter>
 		</>
