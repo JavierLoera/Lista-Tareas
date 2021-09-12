@@ -1,6 +1,6 @@
 import TareaRow from "./TareaRow";
 import { makeStyles } from "@material-ui/core/styles";
-import {Container,TableContainer,Table,TableHead,TableCell,TableRow,TableBody } from "@material-ui/core";
+import {Paper,Container,TableContainer,Table,TableHead,TableCell,TableRow,TableBody } from "@material-ui/core";
 
 const useStyles = makeStyles({
 	table: {
@@ -10,7 +10,6 @@ const useStyles = makeStyles({
 
 export default function BasicTable({ tareas, eliminarTarea, modificarTarea }) {
 	const classes = useStyles();
-
 	return (
 		<Container maxwidth="sm">
 			<TableContainer component={Paper}>
