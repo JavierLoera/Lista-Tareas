@@ -94,7 +94,7 @@ export default function App() {
 							)}
 						/>
 					</Switch>
-				}
+				
 
 <Switch>
 						<Route
@@ -122,7 +122,7 @@ export default function App() {
 								/>
 							)}
 						/>
-					</Switch>
+					</Switch>}
 	
 			</BrowserRouter>
 		</>
