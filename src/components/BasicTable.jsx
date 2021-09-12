@@ -1,4 +1,6 @@
 import TareaRow from "./TareaRow";
+import { makeStyles } from "@material-ui/core/styles";
+import {Container,TableContainer,Table,TableHead,TableCell,TableRow,TableBody } from "@material-ui/core";
 
 const useStyles = makeStyles({
 	table: {
