@@ -100,7 +100,6 @@ export default function App() {
 						<Route
 							exact
 							path="/"
-"
 							component={() => (
 								<FormTareas
 									handleChange={handleChange}
