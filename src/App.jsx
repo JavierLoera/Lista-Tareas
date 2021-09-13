@@ -1,4 +1,3 @@
-/* eslint-disable no-lone-blocks */
 import React, { useState, useEffect } from "react";
 import FormTareas from "./components/FormTareas.jsx";
 import BasicTable from "./components/BasicTable.jsx";
@@ -8,7 +7,7 @@ import Modificar from "./components/Modificar.jsx";
 
 import shortid from "shortid";
 
-export default function App() {
+export default function FormTable() {
 	const initialState = {
 		id: shortid.generate(),
 		tarea: "",
@@ -94,40 +93,18 @@ export default function App() {
 							)}
 						/>
 					</Switch>
-                                 }
+				}
 
-                                 {     
-                                         <Switch>
-						 <Route
-							exact
-							path="/"
-							component={() => (
-								<FormTareas
-									handleChange={handleChange}
-					                                handleSubmit={handleSubmit}
-					                                validateForm={validateForm}
-								/>
-							)}
-						/>
-					</Switch>
-                                  }
-                                  {
-
-				        <Switch>
-						<Route
-							exact
-							path="/"
-							component={() => (
-								<BasicTable
-						      			tareas={tareas}
-					                                eliminarTarea={eliminarTarea}
-					                                modificarTarea={modificarTarea}
-								/>
-							)}
-						/>
-					</Switch>
-                                  }
-	
+				<FormTareas
+					handleChange={handleChange}
+					handleSubmit={handleSubmit}
+					validateForm={validateForm}
+				></FormTareas>
+				<BasicTable
+					tareas={tareas}
+					eliminarTarea={eliminarTarea}
+					modificarTarea={modificarTarea}
+				></BasicTable>
 			</BrowserRouter>
 		</>
 	);
