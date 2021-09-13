@@ -10,7 +10,6 @@ export default function Modificar({ tareaACambiar, actualizar }) {
 
 	const [tarea, setTarea] = useState(tareaACambiar);
 	const [validateForm, setValidateForm] = useState(true);
-
 	/*actualizar tarea*/
 	const handleChange = (e) => {
 		const { name, value } = e.target;
@@ -74,28 +73,18 @@ export default function Modificar({ tareaACambiar, actualizar }) {
 					)}
 
 					<Button
-						style={{
-							backgroundColor: "#039be5",
-							color: "white",
-							marginBottom: "10px",
-						}}
 						type="submit"
-						value="Submit"
-						variant="contained"
+						variant="outlined"
 						size="medium"
 						startIcon={<SaveIcon />}
 					>
 						Modificar
 					</Button>
 
-					<Link to="/">
+					<Link to="/" style={{ textDecoration: "none" }}>
 						<Button
-							style={{
-								marginLeft: "10px",
-								backgroundColor: "#039be5",
-								color: "white",
-							}}
-							variant="contained"
+							variant="outlined"
+							color="primary"
 							size="medium"
 							startIcon={<ArrowBackIcon />}
 						>
