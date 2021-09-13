@@ -1,6 +1,17 @@
-import TareaRow from "./TareaRow";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import {Paper,Container,TableContainer,Table,TableHead,TableCell,TableRow,TableBody } from "@material-ui/core";
+
+import {
+	Table,
+	TableCell,
+	TableHead,
+	TableBody,
+	TableRow,
+	Paper,
+	TableContainer,
+	Container,
+} from "@material-ui/core";
+import TareaRow from "./TareaRow";
 
 const useStyles = makeStyles({
 	table: {
@@ -10,6 +21,7 @@ const useStyles = makeStyles({
 
 export default function BasicTable({ tareas, eliminarTarea, modificarTarea }) {
 	const classes = useStyles();
+
 	return (
 		<Container maxwidth="sm">
 			<TableContainer component={Paper}>
@@ -17,7 +29,7 @@ export default function BasicTable({ tareas, eliminarTarea, modificarTarea }) {
 					<TableHead>
 						<TableRow>
 							<TableCell>Tarea</TableCell>
-							<TableCell align="right">Descripcion</TableCell>
+							<TableCell align="center">Descripcion</TableCell>
 							<TableCell align="right"></TableCell>
 						</TableRow>
 					</TableHead>
