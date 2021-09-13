@@ -82,6 +82,18 @@ export default function FormTable() {
 			<BrowserRouter>
 				{
 					<Switch>
+                                          <Route exact path="/">
+                      <FormTareas
+                        handleChange={handleChange}
+                        handleSubmit={handleSubmit}
+                        validateForm={validateForm}
+                      ></FormTareas>
+                      <BasicTable
+                        tareas={tareas}
+                        eliminarTarea={eliminarTarea}
+                        modificarTarea={modificarTarea}
+                      ></BasicTable>
+                    </Route>
 						<Route
 							exact
 							path="/Modificar"
@@ -94,17 +106,6 @@ export default function FormTable() {
 						/>
 					</Switch>
 				}
-
-				<FormTareas
-					handleChange={handleChange}
-					handleSubmit={handleSubmit}
-					validateForm={validateForm}
-				></FormTareas>
-				<BasicTable
-					tareas={tareas}
-					eliminarTarea={eliminarTarea}
-					modificarTarea={modificarTarea}
-				></BasicTable>
 			</BrowserRouter>
 		</>
 	);
